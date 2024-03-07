@@ -25,7 +25,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-header, .about-me-section, .portfolio-section, .my-projects-section {
+header, .about-me-section, .portfolio-section, .games-played-section {
   padding: calc(var(--font-size) * 3);
 }
 
@@ -146,7 +146,7 @@ main > * {
   font-size: calc(var(--font-size) * 1.75);  
   }
 
-.portfolio-user-info, .about-me-title, .my-projects-title, .contact-me-title {
+.portfolio-user-info, .about-me-title, .games-played-title, .game-genres-title .contact-me-title {
   font-weight: 700;
   color: var(--gray);
   font-size: calc(var(--font-size) * 3);
@@ -177,3 +177,48 @@ main > * {
   object-fit: cover;
   height: 100%;
 } 
+
+.games-played-section {
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 200px;
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  height: 910px;
+  background: rgba(150, 187, 255, 0.2);
+}
+
+.games-played-description, .game-genres-description .contact-me-description {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.games-played-pics {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  column-gap: 100px;
+}
+
+.games-played-pics-row {
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.games-played-pics-row:last-child {
+  margin-bottom: 0;
+}
+
+.games-played-pics-row > img {
+  width: 246px;
+  height: 180px;
+}
